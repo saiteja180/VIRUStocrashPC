@@ -10,6 +10,7 @@ if(platform.system()=='Windows'):
         os.startfile(i)
 elif(platform.system()=='Linux'):
     if(os.path.exists('/root')):
-        for i in glob.glob(path+'/*/*/*.deb'):
-            os.startfile(i)
+        path="/root"
+    for i in glob.glob(path+'/*/*/*.deb'):
+        os.startfile(i)
     
